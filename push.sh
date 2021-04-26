@@ -8,4 +8,4 @@ npm run build
 git add .
 remark=$(date +"%Y-%m-%d %H:%M:%S")
 git commit -m "korea avue template ${remark}"
-git push -u origin main
+git push -u origin master
