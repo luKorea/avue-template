@@ -10,11 +10,7 @@ export default {
   data() {
     return {};
   },
-  watch: {},
-  created() {
-  },
-  methods: {},
-  computed: {}
+
 };
 </script>
 <style lang="scss">
