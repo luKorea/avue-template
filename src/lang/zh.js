@@ -1,6 +1,6 @@
 export default {
   tip: '提示',
-  title: 'Saber企业级开发平台',
+  title: '管理系统开发',
   logoutTip: '退出系统, 是否继续?',
   submitText: '确定',
   cancelText: '取消',
@@ -64,8 +64,8 @@ export default {
     test: '测试页面'
   },
   login: {
-    title: '登录 ',
-    info: '企业级开发平台',
+    title: '登录管理系统 ',
+    info: '基础模板管理系统',
     tenantId: '请输入租户ID',
     username: '请输入账号',
     password: '请输入密码',

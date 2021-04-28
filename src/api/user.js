@@ -10,8 +10,8 @@ export const loginByUsername = (tenantId, account, password, type, key, code) =>
     'Captcha-Code': code,
   },
   params: {
-    grantType: (website.captchaMode ? "captcha" : "password"),
-    tenantId,
+    // grantType: (website.captchaMode ? "captcha" : "password"),
+    // tenantId,
     account,
     password,
     type

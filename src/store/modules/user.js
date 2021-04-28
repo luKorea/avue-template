@@ -43,7 +43,8 @@ const user = {
     //根据用户名登录
     LoginByUsername({commit}, userInfo) {
       return new Promise((resolve, reject) => {
-        loginByUsername(userInfo.tenantId, userInfo.username, userInfo.password, userInfo.type, userInfo.key, userInfo.code).then(res => {
+        loginByUsername(userInfo.tenantId, userInfo.username,
+          userInfo.password, userInfo.type, userInfo.key, userInfo.code).then(res => {
           const data = res.data.data;
           commit('SET_TOKEN', data.accessToken);
           commit('SET_USER_INFO', data);
