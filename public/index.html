@@ -9,6 +9,14 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="format-detection" content="telephone=no">
   <meta http-equiv="X-UA-Compatible" content="chrome=1"/>
+  <!-- 导入需要的包 （一定要放到index.html中的head标签里）-->
+  <script src="https://cdn.staticfile.org/FileSaver.js/2014-11-29/FileSaver.min.js"></script>
+  <script src="https://avuejs.com/cdn/xlsx.full.min.js"></script>
+  <script src="https://cdn.staticfile.org/html2canvas/0.5.0-beta4/html2canvas.min.js"></script>
+  <!-- 导出pdf时导入需要的包 （一定要放到index.html中的head标签里）-->
+  <script src="https://cdn.staticfile.org/jspdf/1.5.3/jspdf.min.js"></script>
+  <!-- 绘制流程图 -->
+  <script src="https://cdn.staticfile.org/jsPlumb/2.11.1/js/jsplumb.min.js"></script>
   <link rel="stylesheet" href="<%= BASE_URL %>cdn/element-ui/2.15.1/theme-chalk/index.css">
   <link rel="stylesheet" href="<%= BASE_URL %>cdn/animate/3.5.2/animate.css">
   <link rel="stylesheet" href="<%= BASE_URL %>cdn/iconfont/1.0.0/index.css">
@@ -97,6 +105,8 @@
 <!--  </div>-->
 </div>
 <!-- built files will be auto injected -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.14.1/xlsx.full.min.js"></script>
 <script src="<%= BASE_URL %>util/aes.js" charset="utf-8"></script>
 <script src="<%= BASE_URL %>cdn/vue/2.6.10/vue.min.js" charset="utf-8"></script>
 <script src="<%= BASE_URL %>cdn/vuex/3.1.1/vuex.min.js" charset="utf-8"></script>

@@ -197,11 +197,19 @@
         const menuLIst = this.$refs.tree.getCheckedKeys();
         grant(this.idsArray, menuLIst).then(() => {
           this.box = false;
-          this.$message({
+          this.$message.success({
             type: "success",
-            message: "操作成功!"
+            message: '权限修改成功，请重新登陆已便权限更新',
+            duration: 3000
           });
-          this.onLoad(this.page);
+          this.$store.dispatch("LogOut").then(() => {
+            this.$router.push({ path: "/login" });
+          });
+          // this.$message({
+          //   type: "success",
+          //   message: "操作成功!"
+          // });
+          // this.onLoad(this.page);
         });
       },
       rowSave(row, done, loading) {

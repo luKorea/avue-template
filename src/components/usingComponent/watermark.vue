@@ -1,12 +1,10 @@
 <!-- TODO  全局水印 -->
 <template>
-  <basic-container>
-    <el-row :gutter="12">
-      <el-tag title="Watermark 全局水印"/>
-      <el-button @click="submitWatermark" type="primary">全局水印</el-button>
-      <el-button @click="delWatermark" type="danger">删除水印</el-button>
-    </el-row>
-  </basic-container>
+  <el-row>
+    <el-tag style="margin-right: 10px" type="success">Watermark 全局水印</el-tag>
+    <el-button @click="submitWatermark" type="primary">全局水印</el-button>
+    <el-button @click="delWatermark" type="danger">删除水印</el-button>
+  </el-row>
 </template>
 
 <script>
