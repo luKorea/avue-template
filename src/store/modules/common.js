@@ -6,7 +6,6 @@ import {
 import website from '@/config/website'
 
 const common = {
-
   state: {
     language: getStore({name: 'language'}) || 'zh',
     isCollapse: false,
