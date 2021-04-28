@@ -4,9 +4,9 @@ baseball=$(
   pwd
 )
 cd "$baseball" || exit
-npm run build
+#npm run build
 git add .
 remark=$(date +"%Y-%m-%d %H:%M:%S")
 git commit -m "korea avue template ${remark}"
 git pull
-git push -u origin master
+git push
