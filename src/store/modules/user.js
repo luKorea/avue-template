@@ -114,19 +114,28 @@ const user = {
     },
     // 登出
     LogOut({commit}) {
+      // eslint-disable-next-line no-unused-vars
       return new Promise((resolve, reject) => {
-        logout().then(() => {
-          commit('SET_TOKEN', '');
-          commit('SET_MENU', [])
-          commit('SET_MENU_ALL', []);
-          commit('SET_ROLES', []);
-          commit('DEL_ALL_TAG');
-          commit('CLEAR_LOCK');
-          removeToken()
-          resolve()
-        }).catch(error => {
-          reject(error)
-        })
+        commit('SET_TOKEN', '');
+        commit('SET_MENU', [])
+        commit('SET_MENU_ALL', []);
+        commit('SET_ROLES', []);
+        commit('DEL_ALL_TAG');
+        commit('CLEAR_LOCK');
+        removeToken()
+        resolve()
+        // logout().then(() => {
+        //   commit('SET_TOKEN', '');
+        //   commit('SET_MENU', [])
+        //   commit('SET_MENU_ALL', []);
+        //   commit('SET_ROLES', []);
+        //   commit('DEL_ALL_TAG');
+        //   commit('CLEAR_LOCK');
+        //   removeToken()
+        //   resolve()
+        // }).catch(error => {
+        //   reject(error)
+        // })
       })
     },
     //注销session
