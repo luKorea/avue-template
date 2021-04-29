@@ -24,7 +24,7 @@
                    @click="handleDelete">删 除
         </el-button>
         <el-button size="small"
-                   icon="el-icon-delete"
+                   icon="el-icon-s-custom"
                    @click="handleRole"
                    plain>权限设置
         </el-button>
@@ -270,8 +270,11 @@
         this.selectionList = list;
       },
       handleRole() {
-        if (this.selectionList.length !== 1) {
+        if (this.selectionList.length > 1) {
           this.$message.warning("只能选择一条数据");
+          return;
+        } if (this.selectionList.length === 0) {
+          this.$message.warning("请先选择一条数据");
           return;
         }
         this.defaultObj = [];

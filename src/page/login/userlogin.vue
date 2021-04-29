@@ -121,6 +121,11 @@
     computed: {
       ...mapGetters(["tagWel"])
     },
+    watch: {
+      $route(oldRouter, newRouter) {
+        console.log(oldRouter, newRouter);
+      }
+    },
     props: [],
     methods: {
       refreshCode() {
@@ -167,6 +172,7 @@
     }
   };
 </script>
+
 
 <style>
 </style>

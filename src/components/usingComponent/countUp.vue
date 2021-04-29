@@ -1,10 +1,10 @@
 <!-- TODO CountUp数字动画-->
 <template>
-  <div>
+  <basic-container>
     <el-tag style="margin-right: 10px" type="success">数字动画</el-tag>
     <el-tag type="info" style="margin-right: 10px"><avue-count-up :end="15033.2"></avue-count-up></el-tag>
     <el-tag type="warning"><avue-count-up :end="1233.2" :start="1000"></avue-count-up></el-tag>
-  </div>
+  </basic-container>
 </template>
 
 <script>

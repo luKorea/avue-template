@@ -1,27 +1,20 @@
 <template>
   <div>
+    <map-component :map-data="mapData"/>
+    <ueditor-component :data="data"/>
     <basic-container>
+      <el-tag type="danger">基础功能</el-tag>
       <watermark-component class="margin-bt"/>
       <import-component class="margin-bt"/>
       <export-component class="margin-bt"/>
       <screen-shot-component class="margin-bt"/>
       <print-component class="margin-bt"/>
     </basic-container>
-    <basic-container>
-      <image-preview-component/>
-    </basic-container>
-    <basic-container>
-      <count-up-component/>
-    </basic-container>
-    <basic-container>
-      <n-progress-component/>
-    </basic-container>
-    <basic-container>
-      <video-component/>
-    </basic-container>
-    <basic-container>
-      <verify-component/>
-    </basic-container>
+    <image-preview-component/>
+    <count-up-component/>
+    <n-progress-component/>
+    <video-component/>
+    <verify-component/>
     <keyboard-component/>
   </div>
 </template>
@@ -37,7 +30,9 @@ import countUpComponent from "../../components/usingComponent/countUp";
 import nProgressComponent from "../../components/usingComponent/nProgress";
 import videoComponent from "../../components/usingComponent/video";
 import verifyComponent from "../../components/usingComponent/verify";
-import keyboardComponent  from "../../components/usingComponent/keyboard";
+import keyboardComponent from "../../components/usingComponent/keyboard";
+import mapComponent from "../../components/map";
+import ueditorComponent from '../../components/ueditor';
 
 export default {
   name: "index",
@@ -52,7 +47,15 @@ export default {
     nProgressComponent,
     videoComponent,
     verifyComponent,
-    keyboardComponent
+    keyboardComponent,
+    mapComponent,
+    ueditorComponent
+  },
+  data() {
+    return {
+      mapData: {},
+      data: '<p>欢迎使用Avue Ueditor</p>'
+    }
   }
 }
 </script>

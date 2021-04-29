@@ -1,11 +1,11 @@
 <!-- TODO ImagePreview -->
 <template>
-  <div>
+  <basic-container>
     <el-tag style="margin-right: 10px" type="success">图片预览</el-tag>
     <el-button @click="openPreview(0)" style="margin-bottom:20px;">打开图片预览</el-button>
     <img width="200px" style="margin-right:20px" v-for="(d, index) of datas" :src="d.thumbUrl"
          @click="openPreview(index)" alt=""/>
-  </div>
+  </basic-container>
 </template>
 
 <script>

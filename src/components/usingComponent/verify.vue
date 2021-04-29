@@ -1,6 +1,6 @@
 <!--TODO Verify 验证码-->
 <template>
-  <div>
+  <basic-container>
     <el-tag style="margin-right: 10px" type="success">验证码</el-tag>
     <el-button @click="$refs.verify.randomn()" type="primary">随机验证码</el-button>
     <br><br>
@@ -9,7 +9,7 @@
     <avue-verify v-model="data" :len="len" ref="verify"></avue-verify>
     <br><br>
     <avue-video background="https://avuejs.com/images/face.png" @data-change="dataChange" ref="video"></avue-video>
-  </div>
+  </basic-container>
 </template>
 
 <script>

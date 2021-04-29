@@ -13,7 +13,7 @@
  * data  数据  Array  —  -
  */
 export default {
-  name: "dataPay",
+  name: "dataPanel",
   data() {
     return {
       option: {

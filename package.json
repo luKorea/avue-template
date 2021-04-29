@@ -1,16 +1,20 @@
 {
-  "name": "saber-admin",
+  "name": "base-admin",
   "version": "3.0.2",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "api": "api-code-builder",
     "lint": "vue-cli-service lint",
     "analyz": "npm_config_report=true npm run build",
     "test:unit": "vue-cli-service test:unit",
     "test:e2e": "vue-cli-service test:e2e"
   },
   "dependencies": {
+    "api-code-builder": "^2.5.6",
+    "avue-plugin-map": "^1.0.1",
+    "avue-plugin-ueditor": "^0.2.0",
     "axios": "^0.18.0",
     "babel-polyfill": "^6.26.0",
     "classlist-polyfill": "^1.2.0",

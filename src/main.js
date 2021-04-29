@@ -9,6 +9,8 @@ import store from './store';
 import {loadStyle} from './util/util'
 import * as urls from '@/config/env';
 import Element from 'element-ui';
+import AvueMap from 'avue-plugin-map';
+import AvueUeditor from 'avue-plugin-ueditor';
 import {
   iconfontUrl,
   iconfontVersion
@@ -20,6 +22,8 @@ import basicContainer from './components/basic-container/main'
 import thirdRegister from './components/third-register/main'
 
 Vue.use(router)
+Vue.use(AvueMap);
+Vue.use(AvueUeditor);
 Vue.use(VueAxios, axios)
 Vue.use(Element, {
   i18n: (key, value) => i18n.t(key, value)
