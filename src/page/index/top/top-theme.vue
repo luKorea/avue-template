@@ -46,6 +46,10 @@ export default {
           value: "theme-star"
         },
         {
+          name: "动漫主题",
+          value: "theme-comic"
+        },
+        {
           name: "iview主题",
           value: "theme-iview"
         },
