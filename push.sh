@@ -6,8 +6,7 @@ baseball=$(
 cd "$baseball" || exit
 #npm run build
 remark=$(date +"%Y-%m-%d %H:%M:%S")
-echo 'Please input the modified content of this version'
-read note
+read -p 'Please input the modified content of this version': note
 git add .
 git commit -m "${note} ${remark}"
 git push
