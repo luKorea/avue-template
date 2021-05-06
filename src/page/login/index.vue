@@ -5,7 +5,7 @@
     <div class="login-weaper animated bounceInDown">
       <div class="login-left">
         <div class="login-time">
-          {{time}}
+          {{ time }}
         </div>
         <img class="img"
              src="/img/logo.gif"
@@ -16,16 +16,16 @@
         <div class="login-main">
           <h4 class="login-title">
             {{ $t('login.title') }}
-<!--            <top-lang></top-lang>-->
+            <!--            <top-lang></top-lang>-->
           </h4>
           <userLogin v-if="activeName==='user'"></userLogin>
-<!--          <codeLogin v-else-if="activeName==='code'"></codeLogin>-->
-<!--          <thirdLogin v-else-if="activeName==='third'"></thirdLogin>-->
-<!--          <div class="login-menu">-->
-<!--            <a href="#" @click.stop="activeName='user'">{{ $t('login.userLogin') }}</a>-->
-<!--            <a href="#" @click.stop="activeName='code'">{{ $t('login.phoneLogin') }}</a>-->
-<!--            <a href="#" @click.stop="activeName='third'">{{ $t('login.thirdLogin') }}</a>-->
-<!--          </div>-->
+          <!--          <thirdLogin v-else-if="activeName==='third'"></thirdLogin>-->
+          <!--          <div class="login-menu">-->
+          <!--            <a href="#" @click.stop="activeName='register'">用户注册</a>-->
+          <!--            <a href="#" @click.stop="activeName='user'">{{ $t('login.userLogin') }}</a>-->
+          <!--            <a href="#" @click.stop="activeName='code'">{{ $t('login.phoneLogin') }}</a>-->
+          <!--            <a href="#" @click.stop="activeName='third'">{{ $t('login.thirdLogin') }}</a>-->
+          <!--          </div>-->
         </div>
 
       </div>
@@ -36,17 +36,20 @@
 import userLogin from "./userlogin";
 import codeLogin from "./codelogin";
 import thirdLogin from "./thirdlogin";
-import { mapGetters } from "vuex";
-import { dateFormat } from "@/util/date";
-import { validatenull } from "@/util/validate";
+import register from './register';
+import {mapGetters} from "vuex";
+import {dateFormat} from "@/util/date";
+import {validatenull} from "@/util/validate";
 import topLang from "@/page/index/top/top-lang";
 import topColor from "@/page/index/top/top-color";
 import {getQueryString, getTopUrl} from "@/util/util";
+
 export default {
   name: "login",
   components: {
     userLogin,
     codeLogin,
+    register,
     thirdLogin,
     topLang,
     topColor

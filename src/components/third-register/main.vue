@@ -7,9 +7,9 @@
              :show-close="false"
              width="20%">
     <el-form :model="form" ref="form" label-width="80px">
-      <el-form-item label="租户编号">
-        <el-input v-model="form.tenantId" placeholder="请输入租户编号"></el-input>
-      </el-form-item>
+<!--      <el-form-item label="租户编号">-->
+<!--        <el-input v-model="form.tenantId" placeholder="请输入租户编号"></el-input>-->
+<!--      </el-form-item>-->
       <el-form-item label="用户姓名">
         <el-input v-model="form.name" placeholder="请输入用户姓名"></el-input>
       </el-form-item>
@@ -66,10 +66,10 @@
     },
     methods: {
       handleRegister() {
-        if (this.form.tenantId === '') {
-          this.$message.warning("请先输入租户编号");
-          return;
-        }
+        // if (this.form.tenantId === '') {
+        //   this.$message.warning("请先输入租户编号");
+        //   return;
+        // }
         if (this.form.account === '') {
           this.$message.warning("请先输入账号名称");
           return;
