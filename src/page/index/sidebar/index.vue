@@ -1,7 +1,7 @@
 <template>
   <div class="avue-sidebar">
-    <logo></logo>
-    <el-scrollbar style="height:100%">
+<!--    <logo></logo>-->
+    <el-scrollbar>
       <div v-if="validatenull(menu)"
            class="avue-sidebar--tip">{{$t('menuTip')}}</div>
       <el-menu unique-opened

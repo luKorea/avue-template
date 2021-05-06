@@ -38,7 +38,7 @@ export default {
     }
   },
   // 授权地址
-  authUrl: 'http://localhost/blade-auth/oauth/render',
+  authUrl: 'http://172.16.90.231/blade-auth/oauth/render',
   // 报表设计器地址(cloud端口为8108,boot端口为80)
-  reportUrl: 'http://localhost:8108/ureport',
+  reportUrl: 'http://172.16.90.231:8108/ureport',
 }
