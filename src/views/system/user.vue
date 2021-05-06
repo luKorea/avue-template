@@ -159,8 +159,7 @@
         roleGrantList: [],
         roleTreeObj: [],
         option: {
-          height: 'auto',
-          calcHeight: 210,
+          dialogClickModal: false,
           searchShow: true,
           searchMenuSpan: 6,
           tip: false,

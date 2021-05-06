@@ -7,6 +7,7 @@
                v-model="form"
                :permission="permissionList"
                :before-open="beforeOpen"
+               :page="page"
                @row-del="rowDel"
                @row-update="rowUpdate"
                @row-save="rowSave"
@@ -63,6 +64,7 @@
           total: 0
         },
         option: {
+          dialogClickModal: false,
           searchShow: true,
           searchMenuSpan: 6,
           tip: false,
@@ -368,6 +370,7 @@
         getList(page.currentPage, page.pageSize, Object.assign(params, this.query)).then(res => {
           this.loading = false;
           this.data = res.data.data;
+          this.page.total = res.data.data.length;
         });
       }
     }

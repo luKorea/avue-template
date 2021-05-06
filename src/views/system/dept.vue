@@ -57,6 +57,7 @@
           total: 0
         },
         option: {
+          dialogClickModal: false,
           searchShow: true,
           searchMenuSpan: 6,
           tip: false,

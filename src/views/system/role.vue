@@ -82,6 +82,7 @@
           border: true,
           index: true,
           selection: true,
+          dialogClickModal: false,
           viewBtn: true,
           column: [
             {

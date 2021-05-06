@@ -53,8 +53,7 @@
         },
         selectionList: [],
         option: {
-          height: 'auto',
-          calcHeight: 210,
+          dialogClickModal: false,
           tip: false,
           searchShow: true,
           searchMenuSpan: 6,

@@ -64,8 +64,6 @@ export default {
         total: 0
       },
       option: {
-        height: 'auto',
-        calcHeight: 210,
         tip: false,
         searchShow: true,
         searchMenuSpan: 6,

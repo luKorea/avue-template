@@ -4,7 +4,16 @@ import {isURL, validatenull} from '@/util/validate'
 import {deepClone} from '@/util/util'
 import webiste from '@/config/website'
 import {Message} from 'element-ui'
-import {loginByUsername, loginBySocial, getUserInfo, getMenu, getTopMenu, logout, refreshToken, getButtons} from '@/api/user'
+import {
+  loginByUsername,
+  loginBySocial,
+  getUserInfo,
+  getMenu,
+  getTopMenu,
+  logout,
+  refreshToken,
+  getButtons
+} from '@/api/user'
 
 
 function addPath(ele, first) {
@@ -45,6 +54,13 @@ const user = {
       return new Promise((resolve, reject) => {
         loginByUsername(userInfo.tenantId, userInfo.username,
           userInfo.password, userInfo.type, userInfo.key, userInfo.code).then(res => {
+          if (res.status === 500) {
+            Message({
+              message: '服务器异常，请联系系统管理员',
+              type: "error"
+            })
+            return;
+          }
           const data = res.data.data;
           commit('SET_TOKEN', data.accessToken);
           commit('SET_USER_INFO', data);
@@ -57,7 +73,7 @@ const user = {
       })
     },
     //根据第三方信息登录
-    LoginBySocial({ commit }, userInfo) {
+    LoginBySocial({commit}, userInfo) {
       return new Promise((resolve) => {
         loginBySocial(userInfo.tenantId, userInfo.source, userInfo.code, userInfo.state).then(res => {
           const data = res.data;
@@ -147,7 +163,7 @@ const user = {
         commit('SET_ROLES', []);
         commit('DEL_ALL_TAG');
         commit('CLEAR_LOCK');
-        removeToken()
+        removeToken();
         resolve()
       })
     },
