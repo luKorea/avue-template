@@ -59,7 +59,6 @@ const user = {
               message: '服务器异常，请联系系统管理员',
               type: "error"
             })
-            return;
           }
           const data = res.data.data;
           commit('SET_TOKEN', data.accessToken);

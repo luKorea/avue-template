@@ -149,8 +149,8 @@
               spinner: "el-icon-loading"
             });
             this.$store.dispatch("LoginByUsername", this.loginForm).then(() => {
-              this.$router.push({path: this.tagWel.value});
               loading.close();
+              this.$router.push({path: this.tagWel.value});
             }).catch(() => {
               loading.close()
             });
