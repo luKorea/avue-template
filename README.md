@@ -9,4 +9,9 @@
     ```shell
    npm install vue-photo-zoom-pro
     ```
+3. 拖拽组件 vuedraggable
+
+    ```shell
+   npm i -S vuedraggabl
+    ```
     
