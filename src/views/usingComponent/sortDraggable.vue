@@ -58,17 +58,13 @@ export default {
       console.log(evt, 'change...')
     },
     //start ,end ,add,update, sort, remove 得到的都差不多
-    start(evt) {
-      this.drag = true
-      console.log(evt, 'start...')
-    },
-    end(evt) {
-      console.log(evt, 'end....', this.city);
+    start() {
       this.drag = true
     },
-    move(evt, originalEvent) {
-      console.log(evt, 'move')
-      console.log(originalEvent) //鼠标位置
+    end() {
+      this.drag = true
+    },
+    move() {
     }
   }
 }
