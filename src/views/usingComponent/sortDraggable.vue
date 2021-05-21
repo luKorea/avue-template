@@ -12,7 +12,7 @@
       @end="end"
       :move="move"
     >
-      <transition-group type="transition" :name="!drag? 'syll_li' : null" :css="true">
+      <transition-group type="transition" :name="!drag ? 'syll_li' : null" :css="true">
         <template v-for="item in city">
           <el-tag class="tag" :type="color(idx)" v-for="(i , idx) in item.city" :key="idx">
             {{ i.name }}
@@ -48,6 +48,8 @@ export default {
         type = 'info';
       } else if (index % 7 === 0) {
         type = 'success';
+      } else if (index % 2 === 0) {
+        type = 'danger';
       }
       return type
     },
