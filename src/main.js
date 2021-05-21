@@ -2,6 +2,8 @@ import Vue from 'vue';
 import axios from './router/axios';
 import VueAxios from 'vue-axios';
 import App from './App';
+// 将自动注册所有组件为全局组件
+import dataV from '@jiaminghi/data-view'
 import router from './router/router';
 import './permission'; // 权限
 import './error'; // 日志
@@ -11,6 +13,7 @@ import * as urls from '@/config/env';
 import Element from 'element-ui';
 import AvueMap from 'avue-plugin-map';
 import AvueUeditor from 'avue-plugin-ueditor';
+import VuePhotoZoomPro from 'vue-photo-zoom-pro';
 import {
   iconfontUrl,
   iconfontVersion
@@ -24,7 +27,9 @@ import thirdRegister from './components/third-register/main'
 Vue.use(router)
 Vue.use(AvueMap);
 Vue.use(AvueUeditor);
-Vue.use(VueAxios, axios)
+Vue.use(VuePhotoZoomPro);
+Vue.use(dataV);
+Vue.use(VueAxios, axios);
 Vue.use(Element, {
   i18n: (key, value) => i18n.t(key, value)
 })

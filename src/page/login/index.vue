@@ -19,13 +19,13 @@
             <!--            <top-lang></top-lang>-->
           </h4>
           <userLogin v-if="activeName==='user'"></userLogin>
-          <!--          <thirdLogin v-else-if="activeName==='third'"></thirdLogin>-->
-          <!--          <div class="login-menu">-->
-          <!--            <a href="#" @click.stop="activeName='register'">用户注册</a>-->
-          <!--            <a href="#" @click.stop="activeName='user'">{{ $t('login.userLogin') }}</a>-->
-          <!--            <a href="#" @click.stop="activeName='code'">{{ $t('login.phoneLogin') }}</a>-->
-          <!--            <a href="#" @click.stop="activeName='third'">{{ $t('login.thirdLogin') }}</a>-->
-          <!--          </div>-->
+          <thirdLogin v-else-if="activeName==='third'"></thirdLogin>
+          <div class="login-menu">
+            <a href="#" @click.stop="activeName='register'">用户注册</a>
+            <a href="#" @click.stop="activeName='user'">{{ $t('login.userLogin') }}</a>
+            <a href="#" @click.stop="activeName='code'">{{ $t('login.phoneLogin') }}</a>
+            <a href="#" @click.stop="activeName='third'">{{ $t('login.thirdLogin') }}</a>
+          </div>
         </div>
 
       </div>

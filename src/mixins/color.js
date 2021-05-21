@@ -118,7 +118,18 @@ export default function () {
         xhr.send();
       },
 
+      /**
+       *
+       * @param theme
+       * @returns {*[]}
+       */
       getThemeCluster(theme) {
+        /**
+         *
+         * @param color
+         * @param tint
+         * @returns {string}
+         */
         const tintColor = (color, tint) => {
           let red = parseInt(color.slice(0, 2), 16);
           let green = parseInt(color.slice(2, 4), 16);
@@ -140,6 +151,12 @@ export default function () {
           }
         };
 
+        /**
+         * @method shadeColor
+         * @param color {String}
+         * @param shade
+         * @returns {string}
+         */
         const shadeColor = (color, shade) => {
           let red = parseInt(color.slice(0, 2), 16);
           let green = parseInt(color.slice(2, 4), 16);

@@ -26,23 +26,25 @@ export default {
         '亲，这款是打特价的价格呢，已经是最低价了哦，现在全场三件（根据具体情况而定）包邮哦，您挑多一件了'
       ],
       msg: '这是你想说的话～。～',
-      list: [{
-        "date": "2019-07-17 23:25:15",
-        "text": {
-          "text": '1111'
-        },
-        "mine": true,
-        "img": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1547542562834&di=4d469265c6847a8f29393fe1038c64c8&imgtype=0&src=http%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_jpg%2FhFB4FUPIIlJSIN5vlQwX2OGlW03Oic9SdtXoOAgMmNBYxfpibmxyG6C0rf7Yml1YKQKrLbet5C4ebpmzGOJZ8icEQ%2F640%3Fwx_fmt%3Djpeg\t",
-        "name": "我"
-      }, {
-        "date": "2019-07-17 23:25:15",
-        "text": {
-          "text": "你说啥我听不懂啊"
-        },
-        "mine": false,
-        "img": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1547542538742&di=33c9b3d1ad6bdfe87eb19e44c8d0da04&imgtype=0&src=http%3A%2F%2Fcyjmw.shengyilu.com%2Fskin%2Findex%2Fimages_four%2Fpic_fi_32.png\t",
-        "name": "云集汇通自助客服"
-      }]
+      list: [
+        {
+          "date": "2019-07-17 23:25:15",
+          "text": {
+            "text": '1111'
+          },
+          "mine": true,
+          "img": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1547542562834&di=4d469265c6847a8f29393fe1038c64c8&imgtype=0&src=http%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_jpg%2FhFB4FUPIIlJSIN5vlQwX2OGlW03Oic9SdtXoOAgMmNBYxfpibmxyG6C0rf7Yml1YKQKrLbet5C4ebpmzGOJZ8icEQ%2F640%3Fwx_fmt%3Djpeg\t",
+          "name": "我"
+        }, {
+          "date": "2019-07-17 23:25:15",
+          "text": {
+            "text": "你说啥我听不懂啊"
+          },
+          "mine": false,
+          "img": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1547542538742&di=33c9b3d1ad6bdfe87eb19e44c8d0da04&imgtype=0&src=http%3A%2F%2Fcyjmw.shengyilu.com%2Fskin%2Findex%2Fimages_four%2Fpic_fi_32.png\t",
+          "name": "云集汇通自助客服"
+        }
+      ]
     }
   },
   mounted() {

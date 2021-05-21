@@ -347,6 +347,7 @@ export default {
      * 分页
      * @explain 传入datasource
      * @param {{ createTime?: string, createUser?: number, current?: number, driverClass?: string, id?: number, isDeleted?: number, name?: string, password?: string, remark?: string, size?: number, status?: number, updateTime?: string, updateUser?: number, url?: string, username?: string }} params
+     * @param axiosConfig
      */
     getDatasourceList(params, axiosConfig) {
       const method = 'get'

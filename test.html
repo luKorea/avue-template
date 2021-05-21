@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+
+</body>
+<script>
+  axios({
+    headers: {
+      Cookies: 'JSESSIONID=7AB9F033A60BB4535E5E7612AD2CE40A'
+    },
+    url: 'http://1.117.95.35:8080/videos/1',
+    params: {
+      index: 1,
+      key: ''
+    },
+    method: 'GET'
+  }).then(res => console.log(res))
+</script>
+</html>
