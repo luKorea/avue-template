@@ -14,16 +14,20 @@ import Element from 'element-ui';
 import AvueMap from 'avue-plugin-map';
 import AvueUeditor from 'avue-plugin-ueditor';
 import VuePhotoZoomPro from 'vue-photo-zoom-pro';
+import AreaLinkageVue from 'area-linkage-vue';
 import {
   iconfontUrl,
   iconfontVersion
 } from '@/config/env';
 import i18n from './lang' // Internationalization
 import './styles/common.scss';
+import 'area-linkage-vue/dist/index.css';
 
 import basicContainer from './components/basic-container/main'
 import thirdRegister from './components/third-register/main'
 
+
+Vue.use(AreaLinkageVue)
 Vue.use(router)
 Vue.use(AvueMap);
 Vue.use(AvueUeditor);
