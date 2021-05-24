@@ -14,4 +14,9 @@
     ```shell
    npm i -S vuedraggabl
     ```
+3. 图片裁切组件 vue-img-cutter
+
+    ```shell
+   npm install vue-img-cutter --save-dev
+    ```
     
